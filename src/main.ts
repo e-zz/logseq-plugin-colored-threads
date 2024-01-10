@@ -76,7 +76,10 @@ const onSettingsChange = () => {
         ${contentModeSelector} .ls-block[level="${
           i + 1
         }"] > .block-children-container > .block-children::after {
-            border-left: 1px solid var(--block-thread-color-level-${(i % colors.length) + 1});
+            border-left: 3px solid var(--block-thread-color-level-${(i % colors.length) + 1});
+            border-top-left-radius: 11px;
+            border-bottom-left-radius: 11px;
+            width: 14px;
           }
           
           ${contentModeSelector} .ls-block[level="${
